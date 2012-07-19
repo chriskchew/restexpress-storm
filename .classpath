@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src/java"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="lib/RestExpress-0.8.0-build-82.jar"/>
+	<classpathentry kind="lib" path="lib/netty-3.4.4.Final.jar"/>
+	<classpathentry kind="lib" path="lib/gson-2.2.2.jar"/>
+	<classpathentry kind="lib" path="lib/DateAdapterJ-1.1.0.jar"/>
+	<classpathentry kind="lib" path="lib/storm-0.7.3.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

@@ -26,7 +26,7 @@ You first need to implement one or more handlers that RestExpress will delegate 
         public void declareFields(OutputFieldsDeclarer declarer);
     }
 
-...the handle() method handles each matching request.  It will be passed an instance of BodyType that has already been deserialized from JSON and is responsible for validating and authenticating the HTTP request and converting it into one or more Storm emissions as a List<Emission>.  The Emission class is a data wrapper that contains the Object emission and the String streamId, both properties are sent to the Spout's SpoutOutputCollector.
+...the handle() method handles each matching request and will be passed an instance of BodyType that has already been deserialized from JSON.  The method is responsible for validating and authenticating the HTTP request and converting it into one or more Storm emissions as a List&lt;Emission&gt;.  The Emission class is a data wrapper that contains the Object emission and the String streamId, both properties are sent to the Spout's SpoutOutputCollector.
 
 The declareFields() method works exactly like the Spout's declareFields() method and should describe all the emissions that can possibly come from your handler.
 
